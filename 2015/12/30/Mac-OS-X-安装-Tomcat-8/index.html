@@ -6,20 +6,48 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="列文浩的博客">
-    <title>test duoshuo - 列文浩的博客</title>
+    <title>Mac OS X 安装 Tomcat 8 - 列文浩的博客</title>
     <meta name="author" content="Manho Lie">
     
     
-    <meta name="description" content="#test duoshuo">
+    <meta name="description" content="OS X 10.11 El Capitan 上安装 Tomcat 8原链
+自从OS X 10.7 不再预安装Java，我们先解决这个问题。
+先决条件：Java我在写这篇文章的时候，Java最新版本是8u66.请在这里 下载。
+在Mac上使用dmg格式的安装包很容易安装JDK；安装后打开终端，输入
+
+java -version
+
+然后显示以下内容：
+
+java version “1.8.0_66”">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="test duoshuo">
-<meta property="og:url" content="http://manho.me/2015/08/13/test-duoshuo/index.html">
+<meta property="og:title" content="Mac OS X 安装 Tomcat 8">
+<meta property="og:url" content="http://manho.me/2015/12/30/Mac-OS-X-安装-Tomcat-8/index.html">
 <meta property="og:site_name" content="列文浩的博客">
-<meta property="og:description" content="#test duoshuo">
-<meta property="og:updated_time" content="2015-08-13T12:49:42.000Z">
+<meta property="og:description" content="OS X 10.11 El Capitan 上安装 Tomcat 8原链
+自从OS X 10.7 不再预安装Java，我们先解决这个问题。
+先决条件：Java我在写这篇文章的时候，Java最新版本是8u66.请在这里 下载。
+在Mac上使用dmg格式的安装包很容易安装JDK；安装后打开终端，输入
+
+java -version
+
+然后显示以下内容：
+
+java version “1.8.0_66”">
+<meta property="og:image" content="http://manho.me/images/tomcat-snapshot.png">
+<meta property="og:updated_time" content="2015-12-30T16:12:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test duoshuo">
-<meta name="twitter:description" content="#test duoshuo">
+<meta name="twitter:title" content="Mac OS X 安装 Tomcat 8">
+<meta name="twitter:description" content="OS X 10.11 El Capitan 上安装 Tomcat 8原链
+自从OS X 10.7 不再预安装Java，我们先解决这个问题。
+先决条件：Java我在写这篇文章的时候，Java最新版本是8u66.请在这里 下载。
+在Mac上使用dmg格式的安装包很容易安装JDK；安装后打开终端，输入
+
+java -version
+
+然后显示以下内容：
+
+java version “1.8.0_66”">
     
     
     
@@ -157,13 +185,13 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            test duoshuo
+            Mac OS X 安装 Tomcat 8
         </h1>
     
     <div class="post-meta">
-    <time itemprop="datePublished" content="Thu Aug 13 2015 20:49:00 GMT+0800">
+    <time itemprop="datePublished" content="Wed Dec 30 2015 23:40:06 GMT+0800">
 	
-		    Aug 13, 2015
+		    Dec 30, 2015
     	
     </time>
     
@@ -172,7 +200,45 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <p>#test duoshuo</p>
+            <h1 id="OS_X_10-11_El_Capitan_上安装_Tomcat_8">OS X 10.11 El Capitan 上安装 Tomcat 8</h1><p><a href="https://wolfpaulus.com/journal/mac/tomcat8/" target="_blank" rel="external">原链</a></p>
+<p>自从OS X 10.7 不再预安装Java，我们先解决这个问题。</p>
+<h3 id="先决条件：Java">先决条件：Java</h3><p>我在写这篇文章的时候，Java最新版本是8u66.请在<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="external">这里</a> 下载。</p>
+<p>在Mac上使用dmg格式的安装包很容易安装JDK；安装后打开终端，输入</p>
+<blockquote>
+<p>java -version</p>
+</blockquote>
+<p>然后显示以下内容：</p>
+<blockquote>
+<p>java version “1.8.0_66”</p>
+<p>Java(TM) SE Runtime Environment (build 1.8.0_66-b17)</p>
+<p>Java HotSpot(TM) 64-Bit Server VM (build 25.66-b17, mixed mode)</p>
+</blockquote>
+<p>无论怎样，当你打开终端输入java -version，你要确保安装了Java7或更高版本。</p>
+<h3 id="安装Tomcat">安装Tomcat</h3><p>以下是安装Tomcat的步骤</p>
+<ol>
+<li><p>从 <a href="http://tomcat.apache.org/download-80.cgi" target="_blank" rel="external">这里</a> 下载apache-tomcat-8.0.30.tar.gz </p>
+</li>
+<li><p>打开并解压文件，可使用tar -zxvf命令</p>
+</li>
+<li><p>打开终端并移动解压后的文件到 /usr/local</p>
+<p>sudo mkdir -p /usr/local</p>
+<p>sudo mv ~/Downloads/apache-tomcat-8.0.30 /usr/local</p>
+</li>
+<li><p>增加符号连接</p>
+<p>sudo mkdir -p /usr/local</p>
+<p>sudo mv ~/Downloads/apache-tomcat-8.0.30 /usr/local</p>
+</li>
+<li><p>改变所有者</p>
+<p>sudo chown -R <your_username> /Library/Tomcat</your_username></p>
+</li>
+<li><p>添加可执行权限</p>
+<p> sudo chmod +x /Library/Tomcat/bin/*.sh</p>
+</li>
+</ol>
+<h3 id="运行Tomcat">运行Tomcat</h3><p>~$ /Library/Tomcat/bin/startup.sh</p>
+<p>~$ /Library/Tomcat/bin/shutdown.sh</p>
+<p>打开浏览器，输入：<a href="http://localhost:8080/" target="_blank" rel="external">http://localhost:8080</a></p>
+<p>安装成功<br><img src="/images/tomcat-snapshot.png" alt=""></p>
 
             
                 
@@ -181,7 +247,7 @@
         </div>
     </div>
     <!-- 多说评论框 start -->
-    <div class="ds-thread main-content-wrap" data-thread-key="post-test-duoshuo" data-title="test duoshuo" data-url="http://manho.me/2015/08/13/test-duoshuo/"></div>
+    <div class="ds-thread main-content-wrap" data-thread-key="post-Mac-OS-X-安装-Tomcat-8" data-title="Mac OS X 安装 Tomcat 8" data-url="http://manho.me/2015/12/30/Mac-OS-X-安装-Tomcat-8/"></div>
     <!-- 多说评论框 end -->
     <div class="post-footer main-content-wrap">
         
@@ -190,7 +256,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/12/30/Mac-OS-X-安装-Tomcat-8/"  data-tooltip="Mac OS X 安装 Tomcat 8">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -198,7 +264,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/08/11/test1/" data-tooltip="First post for testing">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/08/13/test-duoshuo/" data-tooltip="test duoshuo">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -213,17 +279,17 @@
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://manho.me/2015/08/13/test-duoshuo/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://manho.me/2015/12/30/Mac-OS-X-安装-Tomcat-8/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://manho.me/2015/08/13/test-duoshuo/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://manho.me/2015/12/30/Mac-OS-X-安装-Tomcat-8/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://manho.me/2015/08/13/test-duoshuo/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://manho.me/2015/12/30/Mac-OS-X-安装-Tomcat-8/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -265,7 +331,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/12/30/Mac-OS-X-安装-Tomcat-8/"  data-tooltip="Mac OS X 安装 Tomcat 8">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -273,7 +339,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/08/11/test1/" data-tooltip="First post for testing">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/08/13/test-duoshuo/" data-tooltip="test duoshuo">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -288,17 +354,17 @@
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://manho.me/2015/08/13/test-duoshuo/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://manho.me/2015/12/30/Mac-OS-X-安装-Tomcat-8/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://manho.me/2015/08/13/test-duoshuo/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://manho.me/2015/12/30/Mac-OS-X-安装-Tomcat-8/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://manho.me/2015/08/13/test-duoshuo/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://manho.me/2015/12/30/Mac-OS-X-安装-Tomcat-8/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -324,17 +390,17 @@
                 <div id="share-options-bar" class="share-options-bar" data-behavior="4">
     <ul class="share-options">
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://manho.me/2015/08/13/test-duoshuo/">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://manho.me/2015/12/30/Mac-OS-X-安装-Tomcat-8/">
                 <i class="fa fa-google-plus"></i><span class="">Share on Google Plus</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://manho.me/2015/08/13/test-duoshuo/">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://manho.me/2015/12/30/Mac-OS-X-安装-Tomcat-8/">
                 <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://manho.me/2015/08/13/test-duoshuo/">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://manho.me/2015/12/30/Mac-OS-X-安装-Tomcat-8/">
                 <i class="fa fa-twitter"></i><span>Share on Twitter</span>
             </a>
         </li>
