@@ -6,20 +6,63 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="列文浩的博客">
-    <title> - 列文浩的博客</title>
+    <title>Mac OSX 安装 Maven - 列文浩的博客</title>
     <meta name="author" content="Manho Lie">
     
     
-    <meta name="description" content="###Manho’s blog">
+    <meta name="description" content="Mac OSX安装maven
+下载maven,并解压到某个目录。例如/usr/local/apache-maven-3.3.3
+
+打开Terminal,输入以下命令，设置Maven classpath
+
+vi ~/.bash_profile 
+
+若使用zsh，则
+
+vi ~/.zshrc
+
+
+添加以下代码，保存并退出vi：
+
+export M2_HOME=/usr/local/apache-mav">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="列文浩的博客">
-<meta property="og:url" content="http://manho.me/README.html">
+<meta property="og:title" content="Mac OSX 安装 Maven">
+<meta property="og:url" content="http://manho.me/2016/01/08/mac-osx安装mvn/index.html">
 <meta property="og:site_name" content="列文浩的博客">
-<meta property="og:description" content="###Manho’s blog">
-<meta property="og:updated_time" content="2015-08-11T13:03:01.000Z">
+<meta property="og:description" content="Mac OSX安装maven
+下载maven,并解压到某个目录。例如/usr/local/apache-maven-3.3.3
+
+打开Terminal,输入以下命令，设置Maven classpath
+
+vi ~/.bash_profile 
+
+若使用zsh，则
+
+vi ~/.zshrc
+
+
+添加以下代码，保存并退出vi：
+
+export M2_HOME=/usr/local/apache-mav">
+<meta property="og:image" content="http://manho.me/images/maven-snapshot.png">
+<meta property="og:updated_time" content="2016-01-08T15:29:53.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="列文浩的博客">
-<meta name="twitter:description" content="###Manho’s blog">
+<meta name="twitter:title" content="Mac OSX 安装 Maven">
+<meta name="twitter:description" content="Mac OSX安装maven
+下载maven,并解压到某个目录。例如/usr/local/apache-maven-3.3.3
+
+打开Terminal,输入以下命令，设置Maven classpath
+
+vi ~/.bash_profile 
+
+若使用zsh，则
+
+vi ~/.zshrc
+
+
+添加以下代码，保存并退出vi：
+
+export M2_HOME=/usr/local/apache-mav">
     
     
     
@@ -37,14 +80,14 @@
 
     <body>
         <div id="blog">
-            <header id="header" data-behavior="2">
+            <header id="header" data-behavior="4">
     <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
     <h1 class="header-title">
         <a class="header-title-link" href="/ ">列文浩的博客</a>
     </h1>
     
 </header>
-            <nav id="sidebar" data-behavior="2">
+            <nav id="sidebar" data-behavior="4">
     
     
         <ul class="sidebar-buttons">
@@ -146,7 +189,7 @@
 </nav>
 
             
-            <div id="main" data-behavior="2"
+            <div id="main" data-behavior="4"
                  class="
                         hasCoverMetaIn
                         ">
@@ -157,13 +200,13 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            (sem título)
+            Mac OSX 安装 Maven
         </h1>
     
     <div class="post-meta">
-    <time itemprop="datePublished" content="Tue Aug 11 2015 21:03:01 GMT+0800">
+    <time itemprop="datePublished" content="Fri Jan 08 2016 23:07:55 GMT+0800">
 	
-		    11/08/2015
+		    08/01/2016
     	
     </time>
     
@@ -172,7 +215,34 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <p>###Manho’s blog</p>
+            <h3 id="Mac_OSX安装maven">Mac OSX安装maven</h3><ol>
+<li><p>下载<a href="https://maven.apache.org/download.cgi" target="_blank" rel="external">maven</a>,并解压到某个目录。例如/usr/local/apache-maven-3.3.3</p>
+</li>
+<li><p>打开Terminal,输入以下命令，设置Maven classpath</p>
+<blockquote>
+<p>vi ~/.bash_profile </p>
+</blockquote>
+<p>若使用zsh，则</p>
+<blockquote>
+<p>vi ~/.zshrc</p>
+</blockquote>
+</li>
+<li><p>添加以下代码，保存并退出vi：</p>
+<blockquote>
+<p>export M2_HOME=/usr/local/apache-maven-3.3.3</p>
+<p>export PATH=$PATH:$M2_HOME/bin</p>
+</blockquote>
+</li>
+<li><p>使bash生效</p>
+<blockquote>
+<p>source  ~/.bash_profile</p>
+</blockquote>
+</li>
+<li><p>输入mvn -version查看安装是否成功</p>
+<p><img src="/images/maven-snapshot.png" alt=""></p>
+<p>​</p>
+</li>
+</ol>
 
             
                 
@@ -181,7 +251,7 @@
         </div>
     </div>
     <!-- 多说评论框 start -->
-    <div class="ds-thread main-content-wrap" data-thread-key="page-undefined" data-title="" data-url="http://manho.me/README.html"></div>
+    <div class="ds-thread main-content-wrap" data-thread-key="post-mac-osx安装mvn" data-title="Mac OSX 安装 Maven" data-url="http://manho.me/2016/01/08/mac-osx安装mvn/"></div>
     <!-- 多说评论框 end -->
     <div class="post-footer main-content-wrap">
         
@@ -198,7 +268,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/12/30/Mac-OS-X-安装-Tomcat-8/" data-tooltip="Mac OS X 安装 Tomcat 8">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">PRÓXIMO</span>
                     <i class="fa fa-angle-right"></i>
@@ -213,17 +283,17 @@
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://manho.me/README.html">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://manho.me/2016/01/08/mac-osx安装mvn/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://manho.me/README.html">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://manho.me/2016/01/08/mac-osx安装mvn/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://manho.me/README.html">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://manho.me/2016/01/08/mac-osx安装mvn/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -258,6 +328,89 @@
 </footer>
 
             </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">ANTERIOR</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/12/30/Mac-OS-X-安装-Tomcat-8/" data-tooltip="Mac OS X 安装 Tomcat 8">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">PRÓXIMO</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://manho.me/2016/01/08/mac-osx安装mvn/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://manho.me/2016/01/08/mac-osx安装mvn/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://manho.me/2016/01/08/mac-osx安装mvn/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+                <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+    <ul class="share-options">
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://manho.me/2016/01/08/mac-osx安装mvn/">
+                <i class="fa fa-google-plus"></i><span class="">Share on Google Plus</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://manho.me/2016/01/08/mac-osx安装mvn/">
+                <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://manho.me/2016/01/08/mac-osx安装mvn/">
+                <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
             
         </div>
         <div id="about">
